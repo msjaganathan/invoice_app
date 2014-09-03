@@ -1,0 +1,6 @@
+<ul>
+  <% @invoices.each do |invoice| %>
+  <li><%= link_to invoice.title, 
+    :action => 'show', :id => invoice.id  %></li>
+  <% end %>
+</ul>
