@@ -26,6 +26,12 @@ group :test do
   gem 'capybara'
 end
 
+#for heroku deployment
+group :production do
+ gem 'pg'
+end
+
+
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'rspec'
